@@ -73,14 +73,15 @@
     "sitemapSwitcherAuto": "on",
     "siteUrl": false,
     "cookiesAlert": false,
-    "gdpr": false
+    "gdpr": false,
+    "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n"
   },
   "pages": {
     "index.html": {
       "settings": {
         "main": true,
         "title": "Ludovic Sacchelli",
-        "meta_descr": "Homepage of Ludovic Sacchelli, visiting assistant professor at Lehigh University.",
+        "meta_descr": "Homepage of Ludovic Sacchelli, postdoctoral researcher",
         "header_custom": "",
         "footer_custom": "",
         "html_before": ""
