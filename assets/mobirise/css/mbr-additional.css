@@ -7,7 +7,7 @@ body {
   font-family: Rubik;
 }
 .display-1 {
-  font-family: 'OpenSans-Light';
+  font-family: 'font';
   font-size: 2.2rem;
   font-display: swap;
 }
@@ -712,7 +712,7 @@ section.lazy-placeholder:after {
 .cid-rlE9iaCnMR {
   padding-top: 135px;
   padding-bottom: 135px;
-  background-image: url("../../../assets/images/img075-4-2000x717.jpg");
+  background-image: url("../../../assets/images/img075-4-1999x645.jpg");
 }
 .cid-rlE9iaCnMR P {
   color: #767676;
