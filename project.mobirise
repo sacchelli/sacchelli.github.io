@@ -50,7 +50,7 @@
         "file": "@PROJECT_PATH@/fonts/font/font.ttf"
       }
     ],
-    "uniqCompNum": 158,
+    "uniqCompNum": 167,
     "versionPublish": "4.12.0",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/logo2-128x128-128x128.png",
@@ -774,57 +774,19 @@
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
             "background-color": "@bgColor",
-            ".counter-container": {
-              "color": "#767676",
-              "ul": {
-                "margin-bottom": "0",
-                "li": {
-                  "margin-bottom": "1rem",
-                  "& when (@stylizedCounters)": {
-                    "list-style": "none",
-                    "&:before": {
-                      "position": "absolute",
-                      "left": "0px",
-                      "margin-top": "-10px",
-                      "padding-top": "3px",
-                      "content": "''",
-                      "display": "inline-block",
-                      "text-align": "center",
-                      "margin": "5px 10px",
-                      "line-height": "20px",
-                      "transition": "all .2s",
-                      "color": "contrast(@counterColor)",
-                      "background": "@counterColor",
-                      "width": "25px",
-                      "height": "25px",
-                      "border-radius": "50%",
-                      "& when (@countersType = 'circle')": {
-                        "background": "none",
-                        "border": "1px solid @counterColor",
-                        "color": "@counterColor"
-                      },
-                      "& when (@countersType = 'square')": {
-                        "border-radius": "0"
-                      },
-                      "& when (@mark)": {
-                        "content": "'✓'"
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            ".mbr-text UL": {
-              "color": "#232323"
+            ".mbr-text, blockquote": {
+              "color": "#767676"
             },
             ".mbr-text": {
               "color": "#232323"
             }
           },
-          "_name": "content12",
-          "_customHTML": "<section class=\"mbr-section article content12\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <input type=\"color\" title=\"Counter Color\" name=\"counterColor\" value=\"#149dcc\" condition=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Mark\" name=\"mark\" checked condition=\"stylizedCounters\">\n        <select title=\"Counters Type\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\" selected>Remplir le cercle</option>\n            <option value=\"circle\">Cercle</option>\n            <option value=\"square\">Carré</option>\n        </select>   \n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text counter-container col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                <ul>\n                    <li><a href=\"https://arxiv.org/abs/2012.12888\">Uniform, localized asymptotics for sub-riemannnian heat kernels and diffusions</a>. With R.W. Neel. Preprint 2020.</li><li><a href=\"https://hal.archives-ouvertes.fr/hal-03053999\" style=\"font-size: 1rem; background-color: rgb(255, 255, 255);\">New inversion methods for the single/multi-shape CLD-to-PSD problem with spheroid particles</a><span style=\"font-size: 1rem;\">. With L. Brivadis. Preprint 2020.</span></li><li><a href=\"https://hal.archives-ouvertes.fr/hal-03021663\" class=\"text-primary\">New perspectives on output feedback stabilization at an unobservable target</a>. With L. Brivadis, J.P. Gauthier, U. Serres. Preprint 2020.</li></ul><ul>\n                </ul>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "rlFtxGdrjC",
-          "_anchor": "content12-12",
+          "_name": "content1",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Width Content\" name=\"widthContent\" min=\"1\" max=\"4\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article mbr-class=\"{'col-md-6': widthContent == 1, 'col-md-8': widthContent == 2, 'col-md-10': widthContent == 3, 'col-md-12': widthContent == 4}\"><p><span style=\"font-size: 1rem;\">[3]&nbsp;<a href=\"https://arxiv.org/abs/2012.12888\" class=\"text-primary\">Uniform, localized asymptotics for sub-riemannnian heat kernels and diffusions</a>. With R.W. Neel. Preprint 2020.</span><br></p><p><span style=\"font-size: 1rem;\">[2]&nbsp;<a href=\"https://hal.archives-ouvertes.fr/hal-03053999\" class=\"text-primary\">New inversion methods for the single/multi-shape CLD-to-PSD problem with spheroid particles</a>. With L. Brivadis. Preprint 2020.</span></p><p></p><div><span style=\"font-size: 1rem;\">[1]&nbsp;<a href=\"https://hal.archives-ouvertes.fr/hal-03021663\" class=\"text-primary\">New perspectives on output feedback stabilization at an unobservable target</a>. With L. Brivadis, J.P. Gauthier, U. Serres. Preprint 2020.</span><br></div><p></p></div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content1-4f",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "slV4pyMANU",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -856,54 +818,17 @@
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
             "background-color": "@bgColor",
-            ".counter-container": {
-              "color": "#767676",
-              "ul": {
-                "margin-bottom": "0",
-                "li": {
-                  "margin-bottom": "1rem",
-                  "& when (@stylizedCounters)": {
-                    "list-style": "none",
-                    "&:before": {
-                      "position": "absolute",
-                      "left": "0px",
-                      "margin-top": "-10px",
-                      "padding-top": "3px",
-                      "content": "''",
-                      "display": "inline-block",
-                      "text-align": "center",
-                      "margin": "5px 10px",
-                      "line-height": "20px",
-                      "transition": "all .2s",
-                      "color": "contrast(@counterColor)",
-                      "background": "@counterColor",
-                      "width": "25px",
-                      "height": "25px",
-                      "border-radius": "50%",
-                      "& when (@countersType = 'circle')": {
-                        "background": "none",
-                        "border": "1px solid @counterColor",
-                        "color": "@counterColor"
-                      },
-                      "& when (@countersType = 'square')": {
-                        "border-radius": "0"
-                      },
-                      "& when (@mark)": {
-                        "content": "'✓'"
-                      }
-                    }
-                  }
-                }
-              }
+            ".mbr-text, blockquote": {
+              "color": "#767676"
             },
-            ".mbr-text UL": {
+            ".mbr-text": {
               "color": "#232323"
             }
           },
-          "_name": "content12",
-          "_customHTML": "<section class=\"mbr-section article content12\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <input type=\"color\" title=\"Counter Color\" name=\"counterColor\" value=\"#149dcc\" condition=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Mark\" name=\"mark\" condition=\"stylizedCounters\">\n        <select title=\"Counters Type\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\">Remplir le cercle</option>\n            <option value=\"circle\" selected>Cercle</option>\n            <option value=\"square\">Carré</option>\n        </select>   \n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text counter-container col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                <ul><li><a href=\"https://hal.archives-ouvertes.fr/hal-02172420\">Avoiding observability singularities in output feedback bilinear systems</a>. With L. Brivadis, J.P. Gauthier, U. Serres. Accepted for publication in SIAM Journal on Control and Optimization.</li><li><a href=\"https://hal.archives-ouvertes.fr/hal-02531537\">A bio-inspired geometric model for sound reconstruction</a>. With U. Boscain, D. Prandi, G. Turco. <a href=\"https://mathematical-neuroscience.springeropen.com/articles/10.1186/s13408-020-00099-4\" class=\"text-success\">The Journal of Mathematical Neuroscience</a>, 11(1):2, 2021.</li><li><a href=\"https://sacchelli.github.io/publis/Drones.pdf\" class=\"text-primary\">Dynamic output stabilization of control systems: an unobservable kinematic drone model</a>.  With A. Ajami, J.P. Gauthier. <a href=\"https://www.sciencedirect.com/science/article/abs/pii/S0005109820305859\" class=\"text-success\">Automatica</a>, 125:109383, 2021.</li><li><a href=\"https://hal.archives-ouvertes.fr/hal-02611605v1\" style=\"font-size: 1rem; background-color: rgb(255, 255, 255);\" class=\"text-primary\">From local to global asymptotic stabilizability for weakly contractive control systems</a><span style=\"font-size: 1rem;\">. With L. Brivadis, V. Andrieu, U. Serres, J.P. Gauthier. <a href=\"https://www.sciencedirect.com/science/article/pii/S0005109820305070\" class=\"text-success\">Automatica,\n</a></span>24:109308, 2021.</li><li><a href=\"https://arxiv.org/abs/1907.11449\" class=\"text-primary\">A bisector line field approach to interpolation of orientation fields</a>. With N. Boizot. <a href=\"https://link.springer.com/article/10.1007/s10851-020-00990-5\" class=\"text-success\">Journal of Mathematical Imaging and Vision</a>, September 2020.</li><li><a href=\"https://hal.archives-ouvertes.fr/hal-01961959\" class=\"text-info\">Short Geodesics Losing Optimality in Contact Sub-Riemannian Manifolds and Stability of the 5-Dimensional Caustic</a>. <a href=\"https://epubs.siam.org/doi/10.1137/18M1234710\" class=\"text-success\">SIAM Journal on Control and Optimization,</a> 57 (2019), no. 4, 2362–2391. &nbsp;- <a href=\"https://sacchelli.github.io/computations.nb\" class=\"text-info\">Computations Mathematica notebook</a> -</li><li><span style=\"font-size: 1rem;\"><a href=\"https://hal.archives-ouvertes.fr/hal-01573353\" class=\"text-info\">On the Whitney extension property for continuously differentiable horizontal curves in sub-Riemannian manifolds</a>. With M. Sigalotti. <a href=\"https://link.springer.com/article/10.1007/s00526-018-1336-8\" class=\"text-success\">Calculus of Variations and PDEs</a>,  (2018) 57: 59.</span></li><li><span style=\"font-size: 1rem;\"><a href=\"https://hal.archives-ouvertes.fr/hal-01318515\" class=\"text-info\">Generic singularities of line fields on 2D manifolds</a>. With U. Boscain, M. Sigalotti.&nbsp;<a href=\"http://www.sciencedirect.com/science/article/pii/S0926224516300882\" class=\"text-success\">Differential Geometry and its Applications</a>, 49 (December 2016), pp. 326-350.</span></li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "rlFulpTdUG",
-          "_anchor": "content12-13",
+          "_name": "content1",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Width Content\" name=\"widthContent\" min=\"1\" max=\"4\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article mbr-class=\"{'col-md-6': widthContent == 1, 'col-md-8': widthContent == 2, 'col-md-10': widthContent == 3, 'col-md-12': widthContent == 4}\"><p>[8] <a href=\"https://hal.archives-ouvertes.fr/hal-02172420\" class=\"text-primary\">Avoiding observability singularities in output feedback bilinear systems</a>. With L. Brivadis, J.P. Gauthier, U. Serres. Accepted for publication in SIAM Journal on Control and Optimization.</p><p><span style=\"font-size: 1rem;\">[7] </span><a href=\"https://hal.archives-ouvertes.fr/hal-02531537\" style=\"font-size: 1rem; background-color: rgb(255, 255, 255);\" class=\"text-primary\">A bio-inspired geometric model for sound reconstruction</a><span style=\"font-size: 1rem;\">. With U. Boscain, D. Prandi, G. Turco. <a href=\"https://mathematical-neuroscience.springeropen.com/articles/10.1186/s13408-020-00099-4\" class=\"text-success\">The Journal of Mathematical Neuroscience</a>, 11(1):2, 2021.</span></p><p><span style=\"font-size: 1rem;\">[6] </span><a href=\"https://sacchelli.github.io/publis/Drones.pdf\" style=\"font-size: 1rem; background-color: rgb(255, 255, 255);\" class=\"text-primary\">Dynamic output stabilization of control systems: an unobservable kinematic drone model</a><span style=\"font-size: 1rem;\">.  With A. Ajami, J.P. Gauthier. <a href=\"https://www.sciencedirect.com/science/article/abs/pii/S0005109820305859\" class=\"text-success\">Automatica</a>, 125:109383, 2021.&nbsp;</span></p><p><span style=\"font-size: 1rem;\">[5] </span><a href=\"https://hal.archives-ouvertes.fr/hal-02611605v1\" style=\"font-size: 1rem; background-color: rgb(255, 255, 255);\" class=\"text-primary\">From local to global asymptotic stabilizability for weakly contractive control systems</a><span style=\"font-size: 1rem;\">. With L. Brivadis, V. Andrieu, U. Serres, J.P. Gauthier. <a href=\"https://www.sciencedirect.com/science/article/pii/S0005109820305070\" class=\"text-success\">Automatica</a>, 24:109308, 2021.</span></p><p><span style=\"font-size: 1rem;\">[4] </span><a href=\"https://arxiv.org/abs/1907.11449\" style=\"font-size: 1rem; background-color: rgb(255, 255, 255);\" class=\"text-primary\">A bisector line field approach to interpolation of orientation fields</a><span style=\"font-size: 1rem;\">. Wih N. Boizot. <a href=\"https://link.springer.com/article/10.1007/s10851-020-00990-5\" class=\"text-success\">Journal of Mathematical Imaging and Vision</a>, September 2020.</span></p><p><span style=\"font-size: 1rem;\">[3] </span><a href=\"https://hal.archives-ouvertes.fr/hal-01961959\" style=\"font-size: 1rem; background-color: rgb(255, 255, 255);\" class=\"text-primary\">Short Geodesics Losing Optimality in Contact Sub-Riemannian Manifolds and Stability of the 5-Dimensional Caustic</a><span style=\"font-size: 1rem;\">. <a href=\"https://epubs.siam.org/doi/10.1137/18M1234710\" class=\"text-success\">SIAM Journal on Control and Optimization</a>, 57 (2019), no. 4, 2362–2391.  - <a href=\"https://sacchelli.github.io/computations.nb\" class=\"text-primary\">Computations Mathematica notebook</a> -</span></p><p><span style=\"font-size: 1rem;\">[2] </span><a href=\"https://hal.archives-ouvertes.fr/hal-01573353\" style=\"font-size: 1rem; background-color: rgb(255, 255, 255);\" class=\"text-primary\">On the Whitney extension property for continuously differentiable horizontal curves in sub-Riemannian manifolds</a><span style=\"font-size: 1rem;\">. With M. Sigalotti. <a href=\"https://link.springer.com/article/10.1007/s00526-018-1336-8\" class=\"text-success\">Calculus of Variations and PDEs</a>, (2018) 57: 59.</span></p><p></p><div><span style=\"font-size: 1rem;\">[1] </span><a href=\"https://hal.archives-ouvertes.fr/hal-01318515\" style=\"font-size: 1rem; background-color: rgb(255, 255, 255);\" class=\"text-primary\">Generic singularities of line fields on 2D manifolds</a><span style=\"font-size: 1rem;\">. With U. Boscain, M. Sigalotti. <a href=\"http://www.sciencedirect.com/science/article/pii/S0926224516300882\" class=\"text-success\">Differential Geometry and its Applications</a>, 49 (December 2016), pp. 326-350.</span><br></div><p></p></div>\n        </div>\n    </div>\n</section>",
+          "_cid": "slUXBcBTK3",
+          "_anchor": "content1-4e",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -937,56 +862,19 @@
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
             "background-color": "@bgColor",
-            ".counter-container": {
-              "color": "#767676",
-              "ul": {
-                "margin-bottom": "0",
-                "li": {
-                  "margin-bottom": "1rem",
-                  "& when (@stylizedCounters)": {
-                    "list-style": "none",
-                    "&:before": {
-                      "position": "absolute",
-                      "left": "0px",
-                      "margin-top": "-10px",
-                      "padding-top": "3px",
-                      "content": "''",
-                      "display": "inline-block",
-                      "text-align": "center",
-                      "margin": "5px 10px",
-                      "line-height": "20px",
-                      "transition": "all .2s",
-                      "color": "contrast(@counterColor)",
-                      "background": "@counterColor",
-                      "width": "25px",
-                      "height": "25px",
-                      "border-radius": "50%",
-                      "& when (@countersType = 'circle')": {
-                        "background": "none",
-                        "border": "1px solid @counterColor",
-                        "color": "@counterColor"
-                      },
-                      "& when (@countersType = 'square')": {
-                        "border-radius": "0"
-                      },
-                      "& when (@mark)": {
-                        "content": "'✓'"
-                      }
-                    }
-                  }
-                }
-              }
+            ".mbr-text, blockquote": {
+              "color": "#767676"
             },
-            ".mbr-text UL": {
+            ".mbr-text": {
               "color": "#232323"
             }
           },
-          "_name": "content12",
-          "_customHTML": "<section class=\"mbr-section article content12\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <input type=\"color\" title=\"Counter Color\" name=\"counterColor\" value=\"#149dcc\" condition=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Mark\" name=\"mark\" checked condition=\"stylizedCounters\">\n        <select title=\"Counters Type\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\" selected>Remplir le cercle</option>\n            <option value=\"circle\">Cercle</option>\n            <option value=\"square\">Carré</option>\n        </select>   \n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text counter-container col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                <ul>\n                    <li><a href=\"https://hal.archives-ouvertes.fr/hal-02356524\" style=\"font-size: 1rem; background-color: rgb(255, 255, 255);\" class=\"text-primary\">Dynamic output feedback stabilization of non-uniformly observable dissipative systems</a><span style=\"font-size: 1rem;\">. With L. Brivadis, V. Andrieu, U. Serres, J.P. Gauthier. IFAC World Congress 2020. Forthcoming.</span></li><li><span style=\"font-size: 1rem;\"><a href=\"https://hal.archives-ouvertes.fr/hal-03020099\" class=\"text-primary\">A bio-inspired geometric model for sound reconstruction</a>. With U. Boscain, D. Prandi, G. Turco. Extended abstract. IFAC World Congress 2020. Forthcoming.</span></li><li><span style=\"font-size: 1rem;\"><a href=\"https://ieeexplore.ieee.org/document/9172770\" class=\"text-primary\">Output stabilization of military UAV in the unobservable case</a>. With A. Ajami, M. Brouche, J.P. Gauthier. 2020 IEEE Aerospace Conference, Big Sky, MT, USA, 2020, pp. 1-6.</span></li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_anchor": "content12-2q",
+          "_name": "content1",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Width Content\" name=\"widthContent\" min=\"1\" max=\"4\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article mbr-class=\"{'col-md-6': widthContent == 1, 'col-md-8': widthContent == 2, 'col-md-10': widthContent == 3, 'col-md-12': widthContent == 4}\"><p><span style=\"font-size: 1rem;\">[3] <a href=\"https://hal.archives-ouvertes.fr/hal-02356524\" class=\"text-primary\">Dynamic output feedback stabilization of non-uniformly observable dissipative systems</a>. With L. Brivadis, V. Andrieu, U. Serres, J.P. Gauthier. IFAC World Congress 2020. Forthcoming.</span><br></p><p><span style=\"font-size: 1rem;\">[2] <a href=\"https://hal.archives-ouvertes.fr/hal-03020099\" class=\"text-primary\">A bio-inspired geometric model for sound reconstruction</a>. With U. Boscain, D. Prandi, G. Turco. Extended abstract. IFAC World Congress 2020. Forthcoming.</span></p><p></p><div><span style=\"font-size: 1rem;\">[1] <a href=\"https://ieeexplore.ieee.org/document/9172770\" class=\"text-primary\">Output stabilization of military UAV in the unobservable case</a>. With A. Ajami, M. Brouche, J.P. Gauthier. 2020 IEEE Aerospace Conference, Big Sky, MT, USA, 2020, pp. 1-6.</span><br></div><p></p></div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content1-4g",
           "_isUserblock": true,
           "_sourceTheme": "mobirise4",
-          "_cid": "rQ7VyqdrYg",
+          "_cid": "slV59kYa3w",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -1018,54 +906,19 @@
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
             "background-color": "@bgColor",
-            ".counter-container": {
-              "color": "#767676",
-              "ul": {
-                "margin-bottom": "0",
-                "li": {
-                  "margin-bottom": "1rem",
-                  "& when (@stylizedCounters)": {
-                    "list-style": "none",
-                    "&:before": {
-                      "position": "absolute",
-                      "left": "0px",
-                      "margin-top": "-10px",
-                      "padding-top": "3px",
-                      "content": "''",
-                      "display": "inline-block",
-                      "text-align": "center",
-                      "margin": "5px 10px",
-                      "line-height": "20px",
-                      "transition": "all .2s",
-                      "color": "contrast(@counterColor)",
-                      "background": "@counterColor",
-                      "width": "25px",
-                      "height": "25px",
-                      "border-radius": "50%",
-                      "& when (@countersType = 'circle')": {
-                        "background": "none",
-                        "border": "1px solid @counterColor",
-                        "color": "@counterColor"
-                      },
-                      "& when (@countersType = 'square')": {
-                        "border-radius": "0"
-                      },
-                      "& when (@mark)": {
-                        "content": "'✓'"
-                      }
-                    }
-                  }
-                }
-              }
+            ".mbr-text, blockquote": {
+              "color": "#767676"
             },
-            ".mbr-text UL": {
+            ".mbr-text": {
               "color": "#232323"
             }
           },
-          "_name": "content12",
-          "_customHTML": "<section class=\"mbr-section article content12\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <input type=\"color\" title=\"Counter Color\" name=\"counterColor\" value=\"#149dcc\" condition=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Mark\" name=\"mark\" checked condition=\"stylizedCounters\">\n        <select title=\"Counters Type\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\" selected>Remplir le cercle</option>\n            <option value=\"circle\">Cercle</option>\n            <option value=\"square\">Carré</option>\n        </select>   \n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text counter-container col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article><a href=\"https://tel.archives-ouvertes.fr/tel-01893068\" target=\"_blank\">\n                </a><ul><a href=\"https://tel.archives-ouvertes.fr/tel-01893068\" target=\"_blank\">\n                    </a><li><span style=\"font-size: 1rem;\"><a href=\"https://tel.archives-ouvertes.fr/tel-01893068\" class=\"text-info\">Singularities in sub-Riemannian geometry</a>, Université Paris-Saclay.</span></li><a href=\"https://tel.archives-ouvertes.fr/tel-01893068\" target=\"_blank\">\n                </a></ul><a href=\"https://tel.archives-ouvertes.fr/tel-01893068\" target=\"_blank\">\n            </a></div>\n        </div>\n    </div>\n</section>",
-          "_cid": "rlFulUNwZb",
-          "_anchor": "content12-14",
+          "_name": "content1",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Width Content\" name=\"widthContent\" min=\"1\" max=\"4\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article mbr-class=\"{'col-md-6': widthContent == 1, 'col-md-8': widthContent == 2, 'col-md-10': widthContent == 3, 'col-md-12': widthContent == 4}\"><p><a href=\"https://tel.archives-ouvertes.fr/tel-01893068\" class=\"text-primary\">Singularities in sub-Riemannian geometry</a>, Université Paris-Saclay.</p><p></p></div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content1-4h",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "slV5jLxUYp",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -1097,54 +950,19 @@
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
             "background-color": "@bgColor",
-            ".counter-container": {
-              "color": "#767676",
-              "ul": {
-                "margin-bottom": "0",
-                "li": {
-                  "margin-bottom": "1rem",
-                  "& when (@stylizedCounters)": {
-                    "list-style": "none",
-                    "&:before": {
-                      "position": "absolute",
-                      "left": "0px",
-                      "margin-top": "-10px",
-                      "padding-top": "3px",
-                      "content": "''",
-                      "display": "inline-block",
-                      "text-align": "center",
-                      "margin": "5px 10px",
-                      "line-height": "20px",
-                      "transition": "all .2s",
-                      "color": "contrast(@counterColor)",
-                      "background": "@counterColor",
-                      "width": "25px",
-                      "height": "25px",
-                      "border-radius": "50%",
-                      "& when (@countersType = 'circle')": {
-                        "background": "none",
-                        "border": "1px solid @counterColor",
-                        "color": "@counterColor"
-                      },
-                      "& when (@countersType = 'square')": {
-                        "border-radius": "0"
-                      },
-                      "& when (@mark)": {
-                        "content": "'✓'"
-                      }
-                    }
-                  }
-                }
-              }
+            ".mbr-text, blockquote": {
+              "color": "#767676"
             },
-            ".mbr-text UL": {
+            ".mbr-text": {
               "color": "#232323"
             }
           },
-          "_name": "content12",
-          "_customHTML": "<section class=\"mbr-section article content12\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <input type=\"color\" title=\"Counter Color\" name=\"counterColor\" value=\"#149dcc\" condition=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Mark\" name=\"mark\" checked condition=\"stylizedCounters\">\n        <select title=\"Counters Type\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\" selected>Remplir le cercle</option>\n            <option value=\"circle\">Cercle</option>\n            <option value=\"square\">Carré</option>\n        </select>   \n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text counter-container col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                <ul>\n                    <li><a href=\"https://math.unice.fr/~emiliton/seminaire/seminar.php\" class=\"text-primary\">Séminaire GAD</a>, LJAD, Université de Nice, November 17th 2020, Localization and uniformity of asymptotics for sub-Riemannian heat kernels.</li><li>Séminaire ANR ODISSE, LAGEPP, UCBL, November 5th 2020, &nbsp;Output feedback stabilization of non-uniformly observable control systems.</li><li><a href=\"https://www.ljll.math.upmc.fr/~trelat/SRGI/SRGI_conference.html\" class=\"text-primary\">SRGI conference: Sub-Riemannian Geometry and Interactions</a>, Sorbonne Université, September 10th 2020, Localization and uniformity of asymptotics for sub-Riemannian heat kernels.</li><li>Analysis and probability seminar, UConn, April 24th 2020, Unobservability in system stabilization.</li><li>Differential geometry seminar, Lehigh University, November 18th 2019, A sub-Riemannian Whitney extension theorem.</li><li><a href=\"http://www.l2s.centralesupelec.fr/seminar/2019/seminaire-dautomatique-du-plateau-de-saclay\" class=\"text-info\">Séminaire d'automatique du plateau de Saclay</a>, LSS, Centrale Supélec, October 17th 2019, Stabilization of non-uniformly observable system.</li><li><a href=\"https://www.lehigh.edu/~rwn209/probstat.html\" class=\"text-info\">Probability, statistics &amp; analysis seminar</a>, Lehigh University, September 20th 2019, Stabilizing partially unobservable systems.</li><li><a href=\"https://lagepp.univ-lyon1.fr/events/seminaire-de-ludovic-sacchelli-universite-de-toulon/\" class=\"text-info\">LAGEPP Seminar</a>, Université Lyon 1, June 14th 2019, Extrémales sous-riemanniennes pour les distributions de contact.</li><li><a href=\"https://webusers.imj-prg.fr/~davide.barilari/seminar2016.php\" class=\"text-info\">Sub-Riemannian geometry seminar</a>, IHP, June 20th 2018, Geometry of the sub-Riemannian  caustic of 5-dimensional contact manifolds.</li><li>Conference <a href=\"http://research.jyu.fi/geomeg/workshop/2018/\" class=\"text-info\">Sub-Riemannian geometry and Beyond</a>, february 19th-23rd 2018, Whitney C1 extension of horizontal curves in sub-Riemannian manifolds.</li><li>Control group seminar of Cambridge University's Engineering department, January 16th 2018, Modeling singularities of line fields.</li><li><a href=\"https://webusers.imj-prg.fr/~davide.barilari/seminar2016.php\" class=\"text-info\">Sub-Riemannian geometry seminar</a>, IHP, February 22nd 2016, Sub-Riemannian conjugate loci for contact distributions. &nbsp;</li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "rlFw4l4XSr",
-          "_anchor": "content12-1a",
+          "_name": "content1",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n        <input type=\"range\" inline title=\"Width Content\" name=\"widthContent\" min=\"1\" max=\"4\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article mbr-class=\"{'col-md-6': widthContent == 1, 'col-md-8': widthContent == 2, 'col-md-10': widthContent == 3, 'col-md-12': widthContent == 4}\"><p><span style=\"font-size: 1rem;\"><a href=\"https://math.unice.fr/~emiliton/seminaire/seminar.php\" class=\"text-primary\">Séminaire GAD</a>, LJAD, Université de Nice, November 17th 2020, Localization and uniformity of asymptotics for sub-Riemannian heat kernels.</span><br></p><p><span style=\"font-size: 1rem;\">Séminaire ANR ODISSE, LAGEPP, UCBL, November 5th 2020,  Output feedback stabilization of non-uniformly observable control systems.</span></p><p><span style=\"font-size: 1rem;\"><a href=\"https://www.ljll.math.upmc.fr/~trelat/SRGI/SRGI_conference.html\" class=\"text-primary\">SRGI conference: Sub-Riemannian Geometry and Interactions</a>, Sorbonne Université, September 10th 2020, Localization and uniformity of asymptotics for sub-Riemannian heat kernels.</span></p><p><span style=\"font-size: 1rem;\">Analysis and probability seminar, UConn, April 24th 2020, Unobservability in system stabilization.</span></p><p><span style=\"font-size: 1rem;\">Differential geometry seminar, Lehigh University, November 18th 2019, A sub-Riemannian Whitney extension theorem.</span></p><p><span style=\"font-size: 1rem;\"><a href=\"http://www.l2s.centralesupelec.fr/seminar/2019/seminaire-dautomatique-du-plateau-de-saclay\" class=\"text-primary\">Séminaire d'automatique du plateau de Saclay</a>, L2S, Centrale Supélec, October 17th 2019, Stabilization of non-uniformly observable system.</span></p><p><span style=\"font-size: 1rem;\"><a href=\"https://www.lehigh.edu/~rwn209/probstat.html\" class=\"text-primary\">Probability, statistics &amp; analysis seminar</a>, Lehigh University, September 20th 2019, Stabilizing partially unobservable systems.</span></p><p><span style=\"font-size: 1rem;\"><a href=\"https://lagepp.univ-lyon1.fr/events/seminaire-de-ludovic-sacchelli-universite-de-toulon/\" class=\"text-primary\">LAGEPP Seminar</a>, Université Lyon 1, June 14th 2019, Extrémales sous-riemanniennes pour les distributions de contact.</span></p><p><span style=\"font-size: 1rem;\"><a href=\"https://webusers.imj-prg.fr/~davide.barilari/seminar2016.php\" class=\"text-primary\">Sub-Riemannian geometry seminar</a>, IHP, June 20th 2018, Geometry of the sub-Riemannian caustic of 5-dimensional contact manifolds.</span></p><p><span style=\"font-size: 1rem;\">Conference <a href=\"http://research.jyu.fi/geomeg/workshop/2018/\" class=\"text-primary\">Sub-Riemannian geometry and Beyond</a>, february 19th-23rd 2018, Whitney C1 extension of horizontal curves in sub-Riemannian manifolds.</span></p><p><span style=\"font-size: 1rem;\">Control group seminar of Cambridge University's Engineering department, January 16th 2018, Modeling singularities of line fields.</span></p><div><span style=\"font-size: 1rem;\"><a href=\"https://webusers.imj-prg.fr/~davide.barilari/seminar2016.php\" class=\"text-primary\">Sub-Riemannian geometry seminar</a>, IHP, February 22nd 2016, Sub-Riemannian conjugate loci for contact distributions.&nbsp;</span><br></div><p></p></div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content1-4i",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "slV7xN6omo",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -1254,56 +1072,19 @@
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
             "background-color": "@bgColor",
-            ".counter-container": {
-              "color": "#767676",
-              "ul": {
-                "margin-bottom": "0",
-                "li": {
-                  "margin-bottom": "1rem",
-                  "& when (@stylizedCounters)": {
-                    "list-style": "none",
-                    "&:before": {
-                      "position": "absolute",
-                      "left": "0px",
-                      "margin-top": "-10px",
-                      "padding-top": "3px",
-                      "content": "''",
-                      "display": "inline-block",
-                      "text-align": "center",
-                      "margin": "5px 10px",
-                      "line-height": "20px",
-                      "transition": "all .2s",
-                      "color": "contrast(@counterColor)",
-                      "background": "@counterColor",
-                      "width": "25px",
-                      "height": "25px",
-                      "border-radius": "50%",
-                      "& when (@countersType = 'circle')": {
-                        "background": "none",
-                        "border": "1px solid @counterColor",
-                        "color": "@counterColor"
-                      },
-                      "& when (@countersType = 'square')": {
-                        "border-radius": "0"
-                      },
-                      "& when (@mark)": {
-                        "content": "'✓'"
-                      }
-                    }
-                  }
-                }
-              }
+            ".mbr-text, blockquote": {
+              "color": "#767676"
             },
-            ".mbr-text UL": {
+            ".mbr-text": {
               "color": "#232323"
             }
           },
-          "_name": "content12",
-          "_customHTML": "<section class=\"mbr-section article content12\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <input type=\"color\" title=\"Counter Color\" name=\"counterColor\" value=\"#149dcc\" condition=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Mark\" name=\"mark\" checked condition=\"stylizedCounters\">\n        <select title=\"Counters Type\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\" selected>Remplir le cercle</option>\n            <option value=\"circle\">Cercle</option>\n            <option value=\"square\">Carré</option>\n        </select>   \n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text counter-container col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                <ul>\n                    <li>Calculus II, Math 22, Spring 2020</li><li>Calculus with business applications, Math 81, fall 2019</li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_anchor": "content12-19",
+          "_name": "content1",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Width Content\" name=\"widthContent\" min=\"1\" max=\"4\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article mbr-class=\"{'col-md-6': widthContent == 1, 'col-md-8': widthContent == 2, 'col-md-10': widthContent == 3, 'col-md-12': widthContent == 4}\"><p>Calculus II, Math 22, Spring 2020</p><p>Calculus with business applications, Math 81, fall 2019</p><p></p></div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content1-4j",
           "_isUserblock": true,
           "_sourceTheme": "mobirise4",
-          "_cid": "rDcd14lWkz",
+          "_cid": "slVafNIsfi",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -1342,56 +1123,19 @@
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
             "background-color": "@bgColor",
-            ".counter-container": {
-              "color": "#767676",
-              "ul": {
-                "margin-bottom": "0",
-                "li": {
-                  "margin-bottom": "1rem",
-                  "& when (@stylizedCounters)": {
-                    "list-style": "none",
-                    "&:before": {
-                      "position": "absolute",
-                      "left": "0px",
-                      "margin-top": "-10px",
-                      "padding-top": "3px",
-                      "content": "''",
-                      "display": "inline-block",
-                      "text-align": "center",
-                      "margin": "5px 10px",
-                      "line-height": "20px",
-                      "transition": "all .2s",
-                      "color": "contrast(@counterColor)",
-                      "background": "@counterColor",
-                      "width": "25px",
-                      "height": "25px",
-                      "border-radius": "50%",
-                      "& when (@countersType = 'circle')": {
-                        "background": "none",
-                        "border": "1px solid @counterColor",
-                        "color": "@counterColor"
-                      },
-                      "& when (@countersType = 'square')": {
-                        "border-radius": "0"
-                      },
-                      "& when (@mark)": {
-                        "content": "'✓'"
-                      }
-                    }
-                  }
-                }
-              }
+            ".mbr-text, blockquote": {
+              "color": "#767676"
             },
-            ".mbr-text UL": {
+            ".mbr-text": {
               "color": "#232323"
             }
           },
-          "_name": "content12",
-          "_customHTML": "<section class=\"mbr-section article content12\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <input type=\"color\" title=\"Counter Color\" name=\"counterColor\" value=\"#149dcc\" condition=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Mark\" name=\"mark\" checked condition=\"stylizedCounters\">\n        <select title=\"Counters Type\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\" selected>Remplir le cercle</option>\n            <option value=\"circle\">Cercle</option>\n            <option value=\"square\">Carré</option>\n        </select>   \n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text counter-container col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                <ul>\n                    <li><span style=\"font-size: 1rem;\">Introduction to automation, 1st year DUT, spring 2019</span><br></li><li>Masters degree research project mentoring. Numerical implementation of line fields interpolation, spring 2019</li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_anchor": "content12-1a",
+          "_name": "content1",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Width Content\" name=\"widthContent\" min=\"1\" max=\"4\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article mbr-class=\"{'col-md-6': widthContent == 1, 'col-md-8': widthContent == 2, 'col-md-10': widthContent == 3, 'col-md-12': widthContent == 4}\"><p>Introduction to automation, 1st year DUT, spring 2019</p><p>Masters degree research project mentoring. Numerical implementation of line fields interpolation, spring 2019</p><p></p></div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content1-4k",
           "_isUserblock": true,
           "_sourceTheme": "mobirise4",
-          "_cid": "rDcd1GdIDF",
+          "_cid": "slVaCdZNVT",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -1434,7 +1178,7 @@
             }
           },
           "_name": "content2",
-          "_customHTML": "<section class=\"mbr-section article content1\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-multiline=\"\" mbr-article=\"\">\n                <blockquote><span style=\"font-style: normal;\">TA for the Department of Applied Mathematics of École Polytechnique</span></blockquote>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-multiline mbr-article>\n                <blockquote><span style=\"font-style: normal;\">TA for the Department of Applied Mathematics of École Polytechnique</span></blockquote>\n            </div>\n        </div>\n    </div>\n</section>",
           "_anchor": "content2-1b",
           "_isUserblock": true,
           "_sourceTheme": "mobirise4",
@@ -1450,54 +1194,19 @@
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
             "background-color": "@bgColor",
-            ".counter-container": {
-              "color": "#767676",
-              "ul": {
-                "margin-bottom": "0",
-                "li": {
-                  "margin-bottom": "1rem",
-                  "& when (@stylizedCounters)": {
-                    "list-style": "none",
-                    "&:before": {
-                      "position": "absolute",
-                      "left": "0px",
-                      "margin-top": "-10px",
-                      "padding-top": "3px",
-                      "content": "''",
-                      "display": "inline-block",
-                      "text-align": "center",
-                      "margin": "5px 10px",
-                      "line-height": "20px",
-                      "transition": "all .2s",
-                      "color": "contrast(@counterColor)",
-                      "background": "@counterColor",
-                      "width": "25px",
-                      "height": "25px",
-                      "border-radius": "50%",
-                      "& when (@countersType = 'circle')": {
-                        "background": "none",
-                        "border": "1px solid @counterColor",
-                        "color": "@counterColor"
-                      },
-                      "& when (@countersType = 'square')": {
-                        "border-radius": "0"
-                      },
-                      "& when (@mark)": {
-                        "content": "'✓'"
-                      }
-                    }
-                  }
-                }
-              }
+            ".mbr-text, blockquote": {
+              "color": "#767676"
             },
-            ".mbr-text UL": {
+            ".mbr-text": {
               "color": "#232323"
             }
           },
-          "_name": "content12",
-          "_customHTML": "<section class=\"mbr-section article content12\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <input type=\"color\" title=\"Counter Color\" name=\"counterColor\" value=\"#149dcc\" condition=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Mark\" name=\"mark\" checked condition=\"stylizedCounters\">\n        <select title=\"Counters Type\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\" selected>Remplir le cercle</option>\n            <option value=\"circle\">Cercle</option>\n            <option value=\"square\">Carré</option>\n        </select>   \n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text counter-container col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                <ul>\n                    <li><span style=\"font-size: 1rem;\">Implementation of numerical methods, MAP 572, 3rd year École Polytechnique, 2016-2018</span><br></li><li>Numerical approximation and optimization, MAP 411, 2nd year École Polytechnique, 2015-2017</li><li>Applied mathematics professor in the EV2 students' preparatory semester, 1st year École Polytechnique, 2015-2018</li><li>Control of dynamical models, tutorials, MAP 434, 2nd year École Polytechnique, 2015-2016</li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "rlFw9udVkY",
-          "_anchor": "content12-1d",
+          "_name": "content1",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Width Content\" name=\"widthContent\" min=\"1\" max=\"4\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article mbr-class=\"{'col-md-6': widthContent == 1, 'col-md-8': widthContent == 2, 'col-md-10': widthContent == 3, 'col-md-12': widthContent == 4}\"><p>Implementation of numerical methods, MAP 572, 3rd year École Polytechnique, 2016-2018</p><p>Numerical approximation and optimization, MAP 411, 2nd year École Polytechnique, 2015-2017</p><p>Applied mathematics professor in the EV2 students' preparatory semester, 1st year École Polytechnique, 2015-2018</p><p>Control of dynamical models, tutorials, MAP 434, 2nd year École Polytechnique, 2015-2016</p><p></p></div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content1-4l",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "slVaCZOiCn",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -1529,54 +1238,19 @@
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
             "background-color": "@bgColor",
-            ".counter-container": {
-              "color": "#767676",
-              "ul": {
-                "margin-bottom": "0",
-                "li": {
-                  "margin-bottom": "1rem",
-                  "& when (@stylizedCounters)": {
-                    "list-style": "none",
-                    "&:before": {
-                      "position": "absolute",
-                      "left": "0px",
-                      "margin-top": "-10px",
-                      "padding-top": "3px",
-                      "content": "''",
-                      "display": "inline-block",
-                      "text-align": "center",
-                      "margin": "5px 10px",
-                      "line-height": "20px",
-                      "transition": "all .2s",
-                      "color": "contrast(@counterColor)",
-                      "background": "@counterColor",
-                      "width": "25px",
-                      "height": "25px",
-                      "border-radius": "50%",
-                      "& when (@countersType = 'circle')": {
-                        "background": "none",
-                        "border": "1px solid @counterColor",
-                        "color": "@counterColor"
-                      },
-                      "& when (@countersType = 'square')": {
-                        "border-radius": "0"
-                      },
-                      "& when (@mark)": {
-                        "content": "'✓'"
-                      }
-                    }
-                  }
-                }
-              }
+            ".mbr-text, blockquote": {
+              "color": "#767676"
             },
-            ".mbr-text UL": {
+            ".mbr-text": {
               "color": "#232323"
             }
           },
-          "_name": "content12",
-          "_customHTML": "<section class=\"mbr-section article content12\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <input type=\"color\" title=\"Counter Color\" name=\"counterColor\" value=\"#149dcc\" condition=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Mark\" name=\"mark\" checked condition=\"stylizedCounters\">\n        <select title=\"Counters Type\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\" selected>Remplir le cercle</option>\n            <option value=\"circle\">Cercle</option>\n            <option value=\"square\">Carré</option>\n        </select>   \n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text counter-container col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                <ul>\n                    <li>Math examiner for ECE 1 class of Lycée Henri IV (professor C. Hériveaux), 2014-2015&nbsp;</li><li>Computer science TA for ECE 1 class of Lycée Henri IV, 2014-2015</li><li>Agregation's competitive exam preparation, 2014-2015</li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "rlKNiFzgjV",
-          "_anchor": "content12-14",
+          "_name": "content1",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Width Content\" name=\"widthContent\" min=\"1\" max=\"4\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article mbr-class=\"{'col-md-6': widthContent == 1, 'col-md-8': widthContent == 2, 'col-md-10': widthContent == 3, 'col-md-12': widthContent == 4}\"><p>Math examiner for ECE 1 class of Lycée Henri IV (professor C. Hériveaux), 2014-2015&nbsp;</p><p>Computer science TA for ECE 1 class of Lycée Henri IV, 2014-2015</p><p>Agregation's competitive exam preparation, 2014-2015</p><p></p></div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content1-4m",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "slVaEk4rTl",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
