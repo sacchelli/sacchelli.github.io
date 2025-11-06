@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur d'annonce de séminaire</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: linear-gradient(135deg, #0074bf 0%, #4da6e0 100%);
+        min-height: 100vh;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+    }
+
+    .header {
+        background: linear-gradient(135deg, #0074bf 0%, #4da6e0 100%);
+        color: white;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .content {
+        padding: 40px;
+    }
+
+    .section {
+        margin-bottom: 40px;
+    }
+
+    .section h2 {
+        color: #0074bf;
+        font-size: 22px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #0074bf;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #555;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 2px solid #e0e0e0;
+        border-radius: 6px;
+        font-size: 15px;
+        transition: border-color 0.3s;
+    }
+
+    input[type="text"]:focus,
+    input[type="number"]:focus,
+    input[type="date"]:focus,
+    select:focus,
+    textarea:focus {
+        outline: none;
+        border-color: #0074bf;
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 120px;
+        font-family: inherit;
+    }
+
+    .inline-group {
+        display: flex;
+        gap: 15px;
+    }
+
+    .inline-group .form-group {
+        flex: 1;
+    }
+
+    .btn {
+        background: linear-gradient(135deg, #0074bf 0%, #4da6e0 100%);
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+        display: block;
+        width: 100%;
+    }
+
+    .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(0, 116, 191, 0.3);
+    }
+
+    .btn:active {
+        transform: translateY(0);
+    }
+
+    .output {
+        margin-top: 40px;
+        padding: 30px;
+        background: #f8f9fa;
+        border-radius: 8px;
+        border-left: 4px solid #0074bf;
+        display: none;
+    }
+
+    .output.visible {
+        display: block;
+    }
+
+    .output h3 {
+        color: #0074bf;
+        margin-bottom: 15px;
+    }
+
+    .email-section {
+        margin-bottom: 20px;
+    }
+
+    .email-section h4 {
+        color: #555;
+        font-size: 14px;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .email-box {
+        background: white;
+        padding: 15px;
+        border-radius: 6px;
+        border: 1px solid #e0e0e0;
+        white-space: pre-wrap;
+        font-family: 'Courier New', monospace;
+        font-size: 14px;
+        line-height: 1.8;
+        position: relative;
+    }
+
+    .copy-btn {
+        margin-top: 10px;
+        background: #28a745;
+        width: auto;
+        display: inline-block;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .copy-btn:hover {
+        background: #218838;
+        box-shadow: 0 10px 20px rgba(40, 167, 69, 0.3);
+    }
+
+    #salleAltGroup {
+        display: none;
+    }
+
+    #salleAltGroup.visible {
+        display: block;
+    }
+
+    .email-divider {
+        margin: 40px 0;
+        height: 2px;
+        background: linear-gradient(to right, transparent, #4da6e0, #0074bf, #4da6e0, transparent);
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📧 Générateur d'annonce de séminaire</h1>
+            <p>Remplissez le formulaire pour générer vos emails</p>
+        </div>
+
+        <div class="content">
+            <form id="seminarForm">
+                <div class="section">
+                    <h2>1. Lieu et date</h2>
+                    
+                    <div class="form-group">
+                        <label for="salle">Salle</label>
+                        <select id="salle">
+                            <option value="de conférence">de conférence</option>
+                            <option value="de réunion Fizeau">de réunion Fizeau</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="autre">autre</option>
+                        </select>
+                    </div>
+
+                    <div id="salleAltGroup" class="form-group">
+                        <label for="salleAlt">Salle alternative</label>
+                        <input type="text" id="salleAlt" placeholder="Nom de la salle">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date">
+                    </div>
+
+                    <div class="inline-group">
+                        <div class="form-group">
+                            <label for="heure">Heure</label>
+                            <select id="heure">
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11" selected>11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="minute">Minutes</label>
+                            <select id="minute">
+                                <option value="00" selected>00</option>
+                                <option value="15">15</option>
+                                <option value="30">30</option>
+                                <option value="45">45</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>2. Oratrice, orateur</h2>
+                    
+                    <div class="form-group">
+                        <label for="speaker">Nom de l'orateur/oratrice</label>
+                        <input type="text" id="speaker" placeholder="Ian Malcolm" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="institution">Institution</label>
+                        <input type="text" id="institution" placeholder="Université de Texas Austin" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pageIndico">Page Indico (numéro)</label>
+                        <input type="text" id="pageIndico" placeholder="12345" required>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>3. Exposé</h2>
+                    
+                    <div class="form-group">
+                        <label for="titre">Titre</label>
+                        <input type="text" id="titre" placeholder="Titre de l'exposé" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="resume">Résumé</label>
+                        <textarea id="resume" placeholder="Résumé de l'exposé" required></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn">📨 Générer les emails</button>
+            </form>
+
+            <!-- Email 1: SANDY -->
+            <div id="output1" class="output">
+                <h3>📧 Email 1 - Annonce SANDY</h3>
+                
+                <div class="email-section">
+                    <h4>Destinataires</h4>
+                    <div id="recipients1" class="email-box"></div>
+                    <button class="btn copy-btn" onclick="copyToClipboard('recipients1', this)">📋 Copier</button>
+                </div>
+
+                <div class="email-section">
+                    <h4>Objet</h4>
+                    <div id="subject1" class="email-box"></div>
+                    <button class="btn copy-btn" onclick="copyToClipboard('subject1', this)">📋 Copier</button>
+                </div>
+
+                <div class="email-section">
+                    <h4>Corps du message</h4>
+                    <div id="body1" class="email-box"></div>
+                    <button class="btn copy-btn" onclick="copyToClipboard('body1', this)">📋 Copier</button>
+                </div>
+            </div>
+
+            <div class="email-divider"></div>
+
+            <!-- Email 2: Portail Valrose -->
+            <div id="output2" class="output">
+                <h3>📧 Email 2 - Accès Portail Valrose</h3>
+                
+                <div class="email-section">
+                    <h4>Destinataires</h4>
+                    <div id="recipients2" class="email-box"></div>
+                    <button class="btn copy-btn" onclick="copyToClipboard('recipients2', this)">📋 Copier</button>
+                </div>
+
+                <div class="email-section">
+                    <h4>Objet</h4>
+                    <div id="subject2" class="email-box"></div>
+                    <button class="btn copy-btn" onclick="copyToClipboard('subject2', this)">📋 Copier</button>
+                </div>
+
+                <div class="email-section">
+                    <h4>Corps du message</h4>
+                    <div id="body2" class="email-box"></div>
+                    <button class="btn copy-btn" onclick="copyToClipboard('body2', this)">📋 Copier</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const frenchMonths = [
+            "janvier", "février", "mars", "avril", "mai", "juin",
+            "juillet", "août", "septembre", "octobre", "novembre", "décembre"
+        ];
+
+        const frenchDays = [
+            "dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"
+        ];
+
+        // Toggle alternative room input
+        document.getElementById('salle').addEventListener('change', function(e) {
+            const altGroup = document.getElementById('salleAltGroup');
+            if (e.target.value === 'autre') {
+                altGroup.classList.add('visible');
+            } else {
+                altGroup.classList.remove('visible');
+            }
+        });
+
+        // Copy to clipboard function
+        function copyToClipboard(elementId, button) {
+            const text = document.getElementById(elementId).textContent;
+            navigator.clipboard.writeText(text).then(function() {
+                const originalText = button.textContent;
+                button.textContent = '✅ Copié !';
+                setTimeout(function() {
+                    button.textContent = originalText;
+                }, 2000);
+            });
+        }
+
+        // Form submission
+        document.getElementById('seminarForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const dateInput = document.getElementById('date').value;
+            const date = new Date(dateInput + 'T00:00:00');
+            const jour = date.getDate();
+            const moisIndex = date.getMonth();
+            const annee = date.getFullYear();
+            const heure = document.getElementById('heure').value;
+            const minute = document.getElementById('minute').value;
+            
+            const salleSelect = document.getElementById('salle').value;
+            const salle = salleSelect === 'autre' ? 
+                document.getElementById('salleAlt').value : 
+                salleSelect;
+            
+            const speaker = document.getElementById('speaker').value;
+            const institution = document.getElementById('institution').value;
+            const pageIndico = document.getElementById('pageIndico').value;
+            const titre = document.getElementById('titre').value;
+            const resume = document.getElementById('resume').value;
+            
+            // Get date info
+            const jourSemaine = frenchDays[date.getDay()];
+            const jourSemaineCapital = jourSemaine.charAt(0).toUpperCase() + jourSemaine.slice(1);
+            const moisNom = frenchMonths[moisIndex];
+            
+            // Format date string
+            const dateStr = `${jour} ${moisNom}`;
+            const heureStr = `${heure}h${minute}`;
+            const pageIndicoUrl = `https://indico.math.cnrs.fr/event/${pageIndico}/`;
+            const jourFormate = jour.toString().padStart(2, '0');
+            const moisFormate = (moisIndex + 1).toString().padStart(2, '0');
+            
+            // EMAIL 1 - SANDY
+            const recipients1 = `"allmath" <allmath@unice.fr>`;
+            const subject1 = `SANDY ${jourSemaineCapital} ${jourFormate}/${moisFormate} - ${speaker} (${institution})`;
+            const body1 = `Bonjour,
+
+La prochaine séance du séminaire Analyse et Dynamique se tiendra ${jourSemaineCapital} ${dateStr} à ${heureStr} en salle ${salle}.
+
+Nous recevrons ${speaker} (${institution}), qui nous parlera de "${titre}".
+
+Résumé : "${resume}"
+
+${pageIndicoUrl}
+
+Cordialement,
+Les organisateurs du séminaire Analyse et Dynamique
+Ursula Ludwig et Ludovic Sacchelli`;
+            
+            // Display Email 1
+            document.getElementById('recipients1').textContent = recipients1;
+            document.getElementById('subject1').textContent = subject1;
+            document.getElementById('body1').textContent = body1;
+            document.getElementById('output1').classList.add('visible');
+            
+            // EMAIL 2 - Portail Valrose
+            const recipients2 = `"Accueil Valrose" <accueil-valrose@unice.fr>, "campus-valrose desk" <campus-valrose.desk@univ-cotedazur.fr>, "Ursula Ludwig" <Ursula.LUDWIG@univ-cotedazur.fr>`;
+            const subject2 = `Visite LJAD ${speaker} ${jourSemaineCapital} ${jourFormate}/${moisFormate}`;
+            const body2 = `Bonjour,
+
+${jourSemaineCapital} ${jourFormate}/${moisFormate}, merci de bien vouloir autoriser l'accès au campus à ${speaker}, qui viendra donner un exposé au séminaire d'analyse et dynamique du LJAD.
+
+Cordialement,
+
+Ludovic Sacchelli`;
+            
+            // Display Email 2
+            document.getElementById('recipients2').textContent = recipients2;
+            document.getElementById('subject2').textContent = subject2;
+            document.getElementById('body2').textContent = body2;
+            document.getElementById('output2').classList.add('visible');
+            
+            // Scroll to output
+            document.getElementById('output1').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        });
+
+        // Set current date as default
+        const today = new Date();
+        document.getElementById('date').valueAsDate = today;
+    </script>
+</body>
+</html>
