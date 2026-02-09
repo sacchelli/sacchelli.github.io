@@ -1548,101 +1548,240 @@ section.lazy-placeholder:after {
 .cid-slVaEk4rTl .mbr-text {
   color: #232323;
 }
-.cid-t2e6uWKfgJ {
-  padding-top: 45px;
+.cid-vaJJOkvHL6 {
+  padding-top: 90px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+}
+.cid-vaJJOkvHL6 h2 {
+  text-align: left;
+}
+.cid-vaJJOkvHL6 h4 {
+  text-align: left;
+  font-weight: 500;
+}
+.cid-vaJJOkvHL6 p {
+  color: #767676;
+  text-align: left;
+}
+.cid-vaJJOkvHL6 .aside-content {
+  flex-basis: 100%;
+  -webkit-flex-basis: 100%;
+}
+.cid-vaJJOkvHL6 .block-content {
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  word-break: break-word;
+}
+.cid-vaJJOkvHL6 .media {
+  margin: initial;
+  align-items: center;
+  -webkit-align-items: center;
+}
+.cid-vaJJOkvHL6 .mbr-figure {
+  align-self: flex-start;
+  -webkit-align-self: flex-start;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+}
+.cid-vaJJOkvHL6 .card-img {
+  padding-right: 2rem;
+  width: auto;
+}
+.cid-vaJJOkvHL6 .card-img span {
+  font-size: 72px;
+  color: #707070;
+}
+@media (min-width: 992px) {
+  .cid-vaJJOkvHL6 .mbr-figure {
+    padding-right: 4rem;
+    padding-right: 0;
+    padding-left: 4rem;
+  }
+  .cid-vaJJOkvHL6 .media-container-row {
+    -webkit-flex-direction: row-reverse;
+  }
+}
+@media (max-width: 991px) {
+  .cid-vaJJOkvHL6 .mbr-figure {
+    padding-right: 0;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-top: 1rem;
+    margin-top: 2rem;
+  }
+  .cid-vaJJOkvHL6 .media-container-row {
+    -webkit-flex-direction: column-reverse;
+  }
+}
+@media (max-width: 300px) {
+  .cid-vaJJOkvHL6 .card-img span {
+    font-size: 40px !important;
+  }
+}
+.cid-vaK3iYyLDR {
+  padding-top: 30px;
   padding-bottom: 0px;
   background-color: #ffffff;
 }
-.cid-t2e6uWKfgJ .mbr-section-subtitle {
-  color: #767676;
-}
-.cid-t2e6uWKfgJ H2 {
-  text-align: left;
-}
-.cid-t2e6uWUYzV {
-  padding-top: 30px;
-  padding-bottom: 15px;
-  background-color: #ffffff;
-}
-.cid-t2e6uWUYzV .mbr-section-subtitle {
+.cid-vaK3iYyLDR .mbr-section-subtitle {
   color: #232323;
   text-align: left;
 }
-.cid-t2e6uX2irT {
+.cid-vaJZVbZEGe {
+  padding-top: 0px;
+  padding-bottom: 15px;
+  background-color: #ffffff;
+}
+.cid-vaJZVbZEGe .counter-container {
+  color: #767676;
+}
+.cid-vaJZVbZEGe .counter-container ul {
+  margin-bottom: 0;
+}
+.cid-vaJZVbZEGe .counter-container ul li {
+  margin-bottom: 1rem;
+}
+.cid-vaJZVbZEGe .mbr-text {
+  color: #232323;
+}
+.cid-vaK9Bbs6OH {
+  padding-top: 0px;
+  padding-bottom: 15px;
+  background-color: #ffffff;
+}
+.cid-vaK9Bbs6OH .counter-container {
+  color: #767676;
+}
+.cid-vaK9Bbs6OH .counter-container ul {
+  margin-bottom: 0;
+}
+.cid-vaK9Bbs6OH .counter-container ul li {
+  margin-bottom: 1rem;
+}
+.cid-vaK9Bbs6OH .mbr-text {
+  color: #232323;
+}
+.cid-vaK9BG1pVM {
   padding-top: 0px;
   padding-bottom: 0px;
   background-color: #ffffff;
 }
-.cid-t2e6uX2irT .mbr-text,
-.cid-t2e6uX2irT blockquote {
+.cid-vaK9BG1pVM .counter-container {
   color: #767676;
 }
-.cid-t2e6uX2irT .mbr-text {
+.cid-vaK9BG1pVM .counter-container ul {
+  margin-bottom: 0;
+}
+.cid-vaK9BG1pVM .counter-container ul li {
+  margin-bottom: 1rem;
+}
+.cid-vaK9BG1pVM .mbr-text {
   color: #232323;
 }
-.cid-t2e6uX2irT .mbr-text P {
+.cid-vaK3qLZAm8 {
+  padding-top: 30px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
+}
+.cid-vaK3qLZAm8 .mbr-section-subtitle {
+  color: #232323;
   text-align: left;
 }
-.cid-t2e6uZVEao {
-  padding-top: 30px;
+.cid-vaK3APeSYt {
+  padding-top: 15px;
   padding-bottom: 15px;
   background-color: #ffffff;
 }
-.cid-t2e6uZVEao .mbr-section-subtitle {
-  color: #232323;
-  text-align: left;
+.cid-vaK3APeSYt .counter-container {
+  color: #767676;
 }
-.cid-t2e6v0cpoV {
+.cid-vaK3APeSYt .counter-container ul {
+  margin-bottom: 0;
+}
+.cid-vaK3APeSYt .counter-container ul li {
+  margin-bottom: 1rem;
+}
+.cid-vaK3APeSYt .mbr-text {
+  color: #232323;
+}
+.cid-vaJYNY1rvz {
   padding-top: 0px;
   padding-bottom: 0px;
   background-color: #ffffff;
 }
-.cid-t2e6v0cpoV .mbr-text,
-.cid-t2e6v0cpoV blockquote {
+.cid-vaJYNY1rvz .counter-container {
   color: #767676;
 }
-.cid-t2e6v0cpoV .mbr-text {
+.cid-vaJYNY1rvz .counter-container ul {
+  margin-bottom: 0;
+}
+.cid-vaJYNY1rvz .counter-container ul li {
+  margin-bottom: 1rem;
+}
+.cid-vaJYNY1rvz .mbr-text {
   color: #232323;
 }
-.cid-t2e6uXbnDZ {
-  padding-top: 30px;
+.cid-vaK47DHvou {
+  padding-top: 15px;
   padding-bottom: 15px;
   background-color: #ffffff;
 }
-.cid-t2e6uXbnDZ .mbr-section-subtitle {
-  color: #232323;
-  text-align: left;
+.cid-vaK47DHvou .counter-container {
+  color: #767676;
 }
-.cid-t2e6uXkZ8F {
+.cid-vaK47DHvou .counter-container ul {
+  margin-bottom: 0;
+}
+.cid-vaK47DHvou .counter-container ul li {
+  margin-bottom: 1rem;
+}
+.cid-vaK47DHvou .mbr-text {
+  color: #232323;
+}
+.cid-vaJYOCya0p {
   padding-top: 0px;
   padding-bottom: 0px;
   background-color: #ffffff;
 }
-.cid-t2e6uXkZ8F .mbr-text,
-.cid-t2e6uXkZ8F blockquote {
+.cid-vaJYOCya0p .counter-container {
   color: #767676;
 }
-.cid-t2e6uXkZ8F .mbr-text {
+.cid-vaJYOCya0p .counter-container ul {
+  margin-bottom: 0;
+}
+.cid-vaJYOCya0p .counter-container ul li {
+  margin-bottom: 1rem;
+}
+.cid-vaJYOCya0p .mbr-text {
   color: #232323;
 }
-.cid-t2e6uXt3YR {
+.cid-vaK29qwmUu {
   padding-top: 30px;
-  padding-bottom: 15px;
-  background-color: #ffffff;
-}
-.cid-t2e6uXt3YR .mbr-section-subtitle {
-  color: #232323;
-  text-align: left;
-}
-.cid-t2e6uXHQU3 {
-  padding-top: 0px;
   padding-bottom: 0px;
   background-color: #ffffff;
 }
-.cid-t2e6uXHQU3 .mbr-text,
-.cid-t2e6uXHQU3 blockquote {
+.cid-vaK29qwmUu .mbr-section-subtitle {
+  color: #232323;
+  text-align: left;
+}
+.cid-vaJYOn4EJz {
+  padding-top: 0px;
+  padding-bottom: 120px;
+  background-color: #ffffff;
+}
+.cid-vaJYOn4EJz .counter-container {
   color: #767676;
 }
-.cid-t2e6uXHQU3 .mbr-text {
+.cid-vaJYOn4EJz .counter-container ul {
+  margin-bottom: 0;
+}
+.cid-vaJYOn4EJz .counter-container ul li {
+  margin-bottom: 1rem;
+}
+.cid-vaJYOn4EJz .mbr-text {
   color: #232323;
 }
